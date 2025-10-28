@@ -21,7 +21,7 @@ df = px.data.medals_wide()
 
 #plot bar chart
 if show_bar:
-  fig_bar = px.bar(df, x="nation", y = f"{medal}", title = f"Medals Count ({medal})", t)
+  fig_bar = px.bar(df, x="nation", y = f"{medal}", title = f"Medals Count ({medal})")
   
 fig_bar.update_layout(
   title_x=0.5,
