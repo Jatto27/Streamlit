@@ -21,9 +21,7 @@ df = px.data.medals_wide()
 
 #plot bar chart
 if show_bar:
-  fig_bar = px.bar(
-      df, x="nation", y = f"{medal}", title = f"Medals Count ({medal})", t,
-      )
+  fig_bar = px.bar(df, x="nation", y = f"{medal}", title = f"Medals Count ({medal})", t)
   
 fig_bar.update_layout(
   title_x=0.5,
@@ -35,8 +33,7 @@ fig_bar.update_layout(
 
 if show_pie:
   fig_pie = px.pie(
-      df, values=f"{medal}", names="nation", title=f"Medals Count ({medal})"
-  )
+      df, values=f"{medal}", names="nation", title=f"Medals Count ({medal})")
 
   fig_pie.update_layout(
       title_x=0.5, width=300, height=400
